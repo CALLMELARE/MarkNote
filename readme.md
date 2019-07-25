@@ -1,6 +1,5 @@
 MarkNote - Cloud Markdown Notebook
 =========================
-v2 - Alpha 01
 
 Marknote is a web-based cloud MarkNote notebook system
 
