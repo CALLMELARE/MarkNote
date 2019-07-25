@@ -1,4 +1,5 @@
 var NOTEID = 0;
+var isFolded = false;
 
 function convertDate(unixTime) {
 	var unixTimestamp = new Date(unixTime * 1000);
@@ -160,6 +161,25 @@ function updateList() {
 			// alert("Status: " + status + data );
 		});
 
+}
+
+function foldSidebar() {
+	if (isFolded) {
+		$("#sidebar").css("display", "none");
+		isFolded = !isFolded;
+	}
+	else if (!isFolded) {
+		$("#sidebar").css("display", "block");
+		isFolded = !isFolded;
+	}
+}
+
+function infoCard() {
+	$.message({
+        message:'<div style="color:#333;font-weight:bold;font-size:16px;">MarkNote v2.0.1<div><span style="color:lightgrey;font-size:small;">by LARE<a href="https://github.com/CALLMELARE/MarkNote">On Github</a></span>',
+        type:'info'
+    });
+     
 }
 
 function newNote() {

@@ -60,7 +60,7 @@
 
 		if( hasUser($username) )
 			exit('Username already exist');
-		$passwd = md5('ffffffffff'.$passwd.'蛤蛤蛤');
+		$passwd = md5('tju'.$passwd.'tju');
 		$sql->query("INSERT INTO note_users (username, passwd, email, settings)
 			VALUES ('$username', '$passwd', '$email', '{\"nickname\" = \"$nickname\" }')");
 	}
@@ -77,12 +77,12 @@
 			echo "no this user";
 			return -1;
 		}
-		if(md5('ffffffffff'.$passwd.'蛤蛤蛤') == $truePasswd){
+		if(md5('tju'.$passwd.'tju') == $truePasswd){
 			$sql_output = $sql->query("SELECT username FROM note_users
 				WHERE username = '$username'");
 			$username = $sql_output->fetch_array()['username'];
 			setcookie('MarkNoteUser', $username, time()+604800);
-			setcookie('MarkNotePasswd', md5('ffffffffff'.$passwd.'蛤蛤蛤'), time()+604800);
+			setcookie('MarkNotePasswd', md5('tju'.$passwd.'tju'), time()+604800);
 			$USERNAME = $username;
 			$FORCESTATUS = 1;
 			return 0;

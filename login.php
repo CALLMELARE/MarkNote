@@ -32,15 +32,15 @@ if (hasLogin()) {
 		</head>
 
 		<body>
-			<h1 class="title">登录</h1>
+			<h1 class="title">MarkNote</h1>
 
-			<form method="post" action="login.php">
-				用户名
+			<form method="post" action="login.php" class="login-form">
+				<p class="login-text">用户名</p>
 				<input class="input-text" type="text" name="username" autofocus="autofocus" />
-				密码
+				<p class="login-text">密码</p>
 				<input class="input-text" type="password" name="passwd" />
 
-				<input class="input-btn" type="submit" name="submit" value="CONTINUE" />
+				<input class="input-btn" type="submit" name="submit" value="登录" />
 				<input type="hidden" name="type" value="login" />
 
 			</form>
@@ -75,7 +75,7 @@ if (hasLogin()) {
 				<input class="input-text" type="password" name="passwd" />
 				电子邮箱
 				<input class="input-text" type="text" name="email" />
-				<input class="input-btn" type="submit" name="submit" value="CONTINUE" />
+				<input class="input-btn" type="submit" name="submit" value="注册" />
 
 				<input type="hidden" name="type" value="register">
 			</form>
