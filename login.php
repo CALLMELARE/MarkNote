@@ -27,7 +27,6 @@ if (hasLogin()) {
 			<title>MarkNote</title>
 			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
 			<link rel="stylesheet" type="text/css" href="include/css/login.css">
 		</head>
 
@@ -39,12 +38,9 @@ if (hasLogin()) {
 				<input class="input-text" type="text" name="username" autofocus="autofocus" />
 				密码
 				<input class="input-text" type="password" name="passwd" />
-
 				<input class="input-btn" type="submit" name="submit" value="CONTINUE" />
 				<input type="hidden" name="type" value="login" />
-
 			</form>
-
 			<p style="text-align: center;"><a href="login.php?t=register">还没有账户?在此注册</a></p>
 
 		</body>
@@ -65,19 +61,19 @@ if (hasLogin()) {
 
 		<body>
 			<h1 class="title">注册</h1>
-
 			<form method="post" action="login.php">
-				用户名
-				<input class="input-text" type="text" name="username" autofocus="autofocus" />
-				昵称
-				<input class="input-text" type="text" name="nickname" />
-				密码
-				<input class="input-text" type="password" name="passwd" />
-				电子邮箱
-				<input class="input-text" type="text" name="email" />
-				<input class="input-btn" type="submit" name="submit" value="CONTINUE" />
-
-				<input type="hidden" name="type" value="register">
+				<div style="padding-left: 30px;padding-right: 30px;">
+					用户名
+					<input class="input-text" type="text" name="username" autofocus="autofocus" />
+					昵称
+					<input class="input-text" type="text" name="nickname" />
+					密码
+					<input class="input-text" type="password" name="passwd" />
+					电子邮箱
+					<input class="input-text" type="text" name="email" />
+					<input class="input-btn" type="submit" name="submit" value="CONTINUE" />
+					<input type="hidden" name="type" value="register">
+				</div>
 			</form>
 
 			<p style="text-align: center;"><a href="./">已有账户?在此登录</a></p>
